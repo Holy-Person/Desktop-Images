@@ -1,0 +1,145 @@
+[gd_scene load_steps=5 format=3 uid="uid://dg36isi87x1ul"]
+
+[ext_resource type="Script" path="res://Main/app_main.gd" id="1_wagam"]
+[ext_resource type="PackedScene" uid="uid://roafom5n2j1y" path="res://Window/window.tscn" id="2_av8oh"]
+[ext_resource type="Theme" uid="uid://da4xrtc44usbd" path="res://Art/theme_main.tres" id="3_2pcsl"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lyf6k"]
+bg_color = Color(0.0627451, 0.0588235, 0.0588235, 1)
+
+[node name="AppMain" type="Node"]
+script = ExtResource("1_wagam")
+window_scene = ExtResource("2_av8oh")
+
+[node name="Panel" type="Panel" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxFlat_lyf6k")
+metadata/_edit_lock_ = true
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+offset_right = 1152.0
+offset_bottom = 648.0
+size_flags_horizontal = 3
+theme = ExtResource("3_2pcsl")
+metadata/_edit_lock_ = true
+
+[node name="Control" type="Control" parent="MarginContainer"]
+layout_mode = 2
+metadata/_edit_lock_ = true
+
+[node name="Header" type="Label" parent="MarginContainer/Control"]
+layout_mode = 1
+offset_right = 347.0
+offset_bottom = 70.0
+size_flags_horizontal = 0
+size_flags_vertical = 0
+theme_override_font_sizes/font_size = 48
+text = "Desktop Images"
+
+[node name="Label" type="Label" parent="MarginContainer/Control"]
+layout_mode = 1
+offset_top = 67.0
+offset_right = 246.0
+offset_bottom = 104.0
+size_flags_horizontal = 4
+text = "Drop image files anywhere on this window!"
+
+[node name="LinkButton" type="LinkButton" parent="MarginContainer/Control"]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -40.0
+offset_bottom = 40.0
+grow_horizontal = 0
+text = "[GitHub]"
+underline = 1
+uri = "https://github.com/Holy-Person/Desktop-Images"
+
+[node name="Panel" type="Panel" parent="MarginContainer/Control"]
+visible = false
+clip_contents = true
+custom_minimum_size = Vector2(100, 100)
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -100.0
+offset_top = -100.0
+grow_horizontal = 0
+grow_vertical = 0
+pivot_offset = Vector2(100, 100)
+
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/Control/Panel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 3
+theme_override_constants/margin_top = 3
+theme_override_constants/margin_right = 3
+theme_override_constants/margin_bottom = 3
+
+[node name="Selected" type="TextureRect" parent="MarginContainer/Control/Panel/MarginContainer"]
+self_modulate = Color(1, 1, 1, 0.4)
+layout_mode = 2
+expand_mode = 2
+
+[node name="Label" type="Label" parent="MarginContainer/Control/Panel/MarginContainer/Selected"]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 26.0
+text = "Selected"
+
+[node name="ControlHints" type="GridContainer" parent="MarginContainer/Control"]
+layout_mode = 1
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -40.0
+offset_right = 40.0
+grow_vertical = 0
+columns = 2
+
+[node name="Label" type="Label" parent="MarginContainer/Control/ControlHints"]
+layout_mode = 2
+text = "Controls:"
+
+[node name="Label5" type="Label" parent="MarginContainer/Control/ControlHints"]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="MarginContainer/Control/ControlHints"]
+layout_mode = 2
+text = "ESC/DEL - Close Window"
+
+[node name="Label6" type="Label" parent="MarginContainer/Control/ControlHints"]
+layout_mode = 2
+text = "CTRL+D - Duplicate Window"
+
+[node name="Label7" type="Label" parent="MarginContainer/Control/ControlHints"]
+layout_mode = 2
+text = "PERIOD - Grow Window"
+
+[node name="Label3" type="Label" parent="MarginContainer/Control/ControlHints"]
+layout_mode = 2
+text = "Arrows - Flip H/V"
+
+[node name="Label4" type="Label" parent="MarginContainer/Control/ControlHints"]
+layout_mode = 2
+text = "COMMA - Shrink Window"
+
+[node name="Version" type="Label" parent="MarginContainer/Control"]
+layout_mode = 0
+offset_left = 350.0
+offset_top = 33.0
+offset_right = 397.0
+offset_bottom = 62.0
+text = "v1.0.0"

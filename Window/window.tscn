@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://roafom5n2j1y"]
+
+[ext_resource type="Script" path="res://Window/window.gd" id="1_dukh5"]
+
+[node name="Window" type="Window" groups=["Windows"]]
+transparent_bg = true
+initial_position = 2
+borderless = true
+always_on_top = true
+transparent = true
+content_scale_mode = 1
+content_scale_aspect = 4
+script = ExtResource("1_dukh5")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+expand_mode = 3
+stretch_mode = 5

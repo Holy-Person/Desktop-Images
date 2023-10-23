@@ -1,0 +1,27 @@
+[gd_resource type="Theme" load_steps=3 format=3 uid="uid://da4xrtc44usbd"]
+
+[ext_resource type="FontFile" uid="uid://bttmhnyddqdxg" path="res://Art/NotoSansDisplay/NotoSansDisplay-VariableFont_wdth,wght.ttf" id="1_16lns"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_fscxw"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.219608, 0.219608, 0.219608, 0.0980392)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+corner_detail = 5
+
+[resource]
+default_font = ExtResource("1_16lns")
+GridContainer/constants/h_separation = 10
+GridContainer/constants/v_separation = 4
+Label/colors/font_color = Color(0.807843, 0.803922, 0.764706, 1)
+Label/font_sizes/font_size = 18
+MarginContainer/constants/margin_bottom = 10
+MarginContainer/constants/margin_left = 15
+MarginContainer/constants/margin_right = 15
+MarginContainer/constants/margin_top = 10
+Panel/styles/panel = SubResource("StyleBoxFlat_fscxw")
