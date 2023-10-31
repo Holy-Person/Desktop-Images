@@ -6,7 +6,7 @@
 
 **Desktop Images** lets you display images on your desktop, just open the app and drag any image onto the window, the window can be minimized without affecting the individual images.
 Click and drag images around and use the various keybinds indicated on the window to scale, flip, duplicate or delete individual images.
-Made using Godot 4.2.
+Made using Godot 4.1.
 
 
 ## License
