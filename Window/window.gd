@@ -7,10 +7,10 @@ var drag_offset : Vector2i
 
 
 ## Update window with new image.
-func set_image(image : ImageTexture) -> void:
+func set_image(image : Texture) -> void:
 	$TextureRect.texture = image
 	size = image.get_size()
-func get_image() -> ImageTexture:
+func get_image() -> Texture:
 	return $TextureRect.texture
 
 
