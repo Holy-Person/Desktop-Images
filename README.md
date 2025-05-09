@@ -8,11 +8,10 @@
 Click and drag images around and use the various keybinds indicated on the window to scale, flip, duplicate or delete individual images.
 
 Made using Godot 4.1.4.
+
 Support for .gif files powered by BOTLANNER's [Godot GIF](https://github.com/BOTLANNER/godot-gif).
 
 
 ## License
 
-> [Here's](https://github.com/Holy-Person/Desktop-Images/blob/main/LICENSE) the full license.
-
-This project is licensed under the terms of the **GPL-3.0** license.
+This project is licensed under the terms of the [**GPL-3.0**](https://github.com/Holy-Person/Desktop-Images/blob/main/LICENSE) license.
