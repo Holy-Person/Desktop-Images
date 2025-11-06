@@ -7,8 +7,7 @@
 **Desktop Images** lets you display images on your desktop, just open the app and drag any image onto the window, the window can be minimized without affecting the individual images.
 Click and drag images around and use the various keybinds indicated on the window to scale, flip, duplicate or delete individual images.
 
-Made using Godot 4.1.4.
-
+Made using Godot 4.4.1.
 Support for .gif files powered by BOTLANNER's [Godot GIF](https://github.com/BOTLANNER/godot-gif).
 
 

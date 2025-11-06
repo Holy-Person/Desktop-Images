@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://dg36isi87x1ul"]
 
-[ext_resource type="Script" path="res://Main/app_main.gd" id="1_wagam"]
+[ext_resource type="Script" uid="uid://cpgnafw4pwi5f" path="res://Main/app_main.gd" id="1_wagam"]
 [ext_resource type="PackedScene" uid="uid://roafom5n2j1y" path="res://Window/window.tscn" id="2_av8oh"]
 [ext_resource type="Theme" uid="uid://da4xrtc44usbd" path="res://Art/theme_main.tres" id="3_2pcsl"]
 
@@ -51,7 +51,7 @@ offset_top = 67.0
 offset_right = 246.0
 offset_bottom = 104.0
 size_flags_horizontal = 4
-text = "Drop image files anywhere on this window!"
+text = "Drop or paste image files anywhere on this window!"
 
 [node name="LinkButton" type="LinkButton" parent="MarginContainer/Control"]
 layout_mode = 1
@@ -142,12 +142,13 @@ layout_mode = 2
 text = "COMMA - Shrink Window"
 
 [node name="Version" type="Label" parent="MarginContainer/Control"]
+unique_name_in_owner = true
 layout_mode = 0
 offset_left = 350.0
 offset_top = 33.0
 offset_right = 397.0
 offset_bottom = 62.0
-text = "v1.1.0"
+text = "v0.0.0"
 
 [node name="LinkButton2" type="LinkButton" parent="MarginContainer/Control"]
 layout_mode = 1

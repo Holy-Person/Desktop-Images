@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://roafom5n2j1y"]
 
-[ext_resource type="Script" path="res://Window/window.gd" id="1_dukh5"]
+[ext_resource type="Script" uid="uid://c7disjdwkmtxa" path="res://Window/window.gd" id="1_dukh5"]
 
 [node name="Window" type="Window" groups=["Windows"]]
 transparent_bg = true
