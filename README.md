@@ -13,6 +13,4 @@ Support for .gif files powered by BOTLANNER's [Godot GIF](https://github.com/BOT
 
 ## License
 
-> [Here's](https://github.com/Holy-Person/Desktop-Images/blob/main/LICENSE) the full license.
-
-This project is licensed under the terms of the **GPL-3.0** license.
+This project is licensed under the terms of the [**GPL-3.0**](https://github.com/Holy-Person/Desktop-Images/blob/main/LICENSE) license.

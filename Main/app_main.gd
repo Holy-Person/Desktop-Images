@@ -7,6 +7,7 @@ extends Node
 
 @onready var selected_container : Panel = $MarginContainer/Control/Panel
 @onready var selected_texture : TextureRect = $MarginContainer/Control/Panel/MarginContainer/Selected
+@onready var version: Label = %Version
 
 
 
@@ -14,6 +15,7 @@ extends Node
 func _ready():
 	get_viewport().files_dropped.connect(on_files_dropped)
 	get_window().min_size = Vector2i(530, 245)
+	version.text = "v"+ProjectSettings.get_setting("application/config/version")
 
 ## Handle dropped files.
 func on_files_dropped(files : PackedStringArray) -> void:
